@@ -1,0 +1,2 @@
+,Partition,Accuracy,Precision,Recall,F1,ROC-AUC,MCC
+0,"['designed', 'rand', 'single', 'singles', 'random_doubles', 'previous_chip_viable', 'previous_chip_nonviable']",0.5465828514078795,0.49632502804321793,0.46117530265406403,0.4780797028037214,0.5388752514517262,0.07840859038342889

@@ -1,0 +1,24 @@
+Exception occurred: missing a required argument: 'y_score'
+Traceback (most recent call last):
+  File "/home/lferraz/lentideep-lucas/tsne_plotting.py", line 452, in <module>
+    fine_tune(test_model, full, tokenizer, device)
+  File "/home/lferraz/lentideep-lucas/tsne_plotting.py", line 364, in fine_tune
+    return train_test_val_full_run_nn(model, partitions, tokenizer, device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lferraz/lentideep-lucas/offline_train.py", line 557, in train_test_val_full_run_nn
+    return full_run(model, tokenizer, train_loader, test_loader, valid_loader, epochs=1 , device=device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lferraz/lentideep-lucas/offline_train.py", line 413, in full_run
+    test_model(model, tokenizer, test_dataloader, device)
+  File "/home/lferraz/lentideep-lucas/offline_train.py", line 231, in test_model
+    roc = roc_auc_score(y_true=true_labels, y_pred=predicted_labels)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lferraz/.conda/envs/main_env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 189, in wrapper
+    params = func_sig.bind(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lferraz/.conda/envs/main_env/lib/python3.11/inspect.py", line 3212, in bind
+    return self._bind(args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lferraz/.conda/envs/main_env/lib/python3.11/inspect.py", line 3182, in _bind
+    raise TypeError('missing a required argument: {arg!r}'. \
+TypeError: missing a required argument: 'y_score'
