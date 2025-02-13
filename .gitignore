@@ -1,0 +1,9 @@
+
+# Ignore large files
+miniconda3/
+.cache/
+.git/objects/
+*.tar.bz2
+*.so
+*.whl
+
